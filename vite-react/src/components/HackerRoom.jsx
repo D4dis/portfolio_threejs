@@ -1,16 +1,20 @@
-// import React, {useRef} from 'react';
-import { useGLTF } from '@react-three/drei';
+import { useGLTF, useTexture } from '@react-three/drei';
 
 const HackerRoom = (props) => {
   const { nodes, materials } = useGLTF('/models/hacker-room.glb');
 
+  const monitorTexture = useTexture('textures/desk/monitor.png');
+  const screenTexture = useTexture('textures/desk/screen.png');
+
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.screen_screens_0.geometry} material={materials.screens}>
+        <meshMatcapMaterial map={screenTexture} />
       </mesh>
       <mesh geometry={nodes.screen_glass_glass_0.geometry} material={materials.glass} />
       <mesh geometry={nodes.table_table_mat_0_1.geometry} material={materials.table_mat} />
       <mesh geometry={nodes.table_table_mat_0_2.geometry} material={materials.computer_mat}>
+        <meshMatcapMaterial map={monitorTexture} />
       </mesh>
       <mesh geometry={nodes.table_table_mat_0_3.geometry} material={materials.server_mat} />
       <mesh geometry={nodes.table_table_mat_0_4.geometry} material={materials.vhsPlayer_mat} />
