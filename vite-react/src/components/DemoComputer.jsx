@@ -13,7 +13,7 @@ const DemoComputer = (props) => {
     if (txt) {
       txt.flipY = false;
     }
-  }, txt)
+  }, [txt])
 
   useGSAP(() => {
     gsap.from(group.current.rotation, {
