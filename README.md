@@ -29,6 +29,8 @@ This project was built using these technologies.
 
 ## Features
 
+**🌐 3D HomePage**
+
 **📖 Multi-Page Layout**
 
 **🎨 Styled with React-Tailwind and Css with easy to customize colors**
