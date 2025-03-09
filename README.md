@@ -1,5 +1,5 @@
 <h2 align="center">
-  3D Portfolio<br/>
+  React Three Portfolio<br/>
 </h2>
 <div align="center">
   <img alt="Demo" src="" />
@@ -18,7 +18,7 @@
 
 ## Built With
 
-My personal portfolio <a href="https://daris-3d-portfolio.netlify.app" target="_blank">3D Portfolio</a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="https://darisknc.netlify.app/" target="_blank">React Three Portfolio</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
 This project was built using these technologies.
 
